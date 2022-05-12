@@ -19,3 +19,16 @@ body {
   margin-top: 0px;
   text-align: left;
 }
+
+.app {
+  max-width: 800px;
+  margin: 60px auto;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
