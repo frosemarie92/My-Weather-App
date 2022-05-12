@@ -10,6 +10,59 @@ h1 {
   margin-bottom: 0;
 }
 
+.button {
+    position: relative;
+    transform: translatey(0);
+    padding-block: 1em;
+    padding-inline: 1.5em;
+    font-weight: 600;
+    border-radius: 0.3em;
+    transition: transform 150ms ease-out;
+
+    &:before,
+     &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: inherit;
+      transition: opacity 150ms ease-out;
+    }
+
+    &:before {
+      opacity: 0.4;
+      background: linear-gradient(to bottom, rgba(black, 0), rgba(black, 0.3));
+      box-shadow: 0 0.2em 0.75em gray;
+    }
+
+    &:after {
+      opacity: 0;
+      box-shadow: 0 0.4em 1.5em var(--button-hover-shadow);
+    }
+
+    &:hover {
+      transform: translatey(-2px);
+
+      &:after {
+        opacity: 0.4;
+      }
+    }
+
+    &:active {
+      background-color: var(--button-active-bg);
+      transform: translatey(2px);
+    }
+
+    &:focus {
+      outline: 0.2em solid var(--color-tertiary-light);
+      outline-offset: 0.1em;
+    }
+  }
+}
+
+
 ul {
   margin: 0;
   padding: 0;
