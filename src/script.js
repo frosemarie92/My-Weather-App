@@ -1,6 +1,8 @@
 let apiKey = "84bd2ad5ed0c3b8789486a62c63f2657";
 let apiUrl =
-  "https://api.openweathermap.org/data/2.5/weather?q=New York$appid=${apiKey}";
+  "https://api.openweathermap.org/data/2.5/weather?q=New York$appid=${apiKey}&units=metric";
+
+axios.get(apiUrl).then(displayTemperature);
 
 function formatDate(timestamp) {
   let date = new Date(timestamp);
