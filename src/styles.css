@@ -33,6 +33,14 @@ body {
   margin-left: auto;
 }
 
+.Weather h1 {
+  margin: 20px 0 10px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  color: #000;
+}
+
 .Weather {
   font-family: "Courier New", Courier, monospace;
   background: #fff;
@@ -138,3 +146,4 @@ input {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
