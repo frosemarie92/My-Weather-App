@@ -227,6 +227,11 @@ input {
   font-weight: 700;
 }
 
+.Weather .WeatherForecast canvas {
+  display: block;
+  margin: 20px auto;
+}
+
 .WeatherForecast .forecast-temperature-min {
   margin-left: 10px;
   opacity: 0.6;
