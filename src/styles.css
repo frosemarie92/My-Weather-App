@@ -20,7 +20,7 @@ body {
   text-align: left;
 }
 
-.app {
+.App {
   max-width: 800px;
   margin: 60px auto;
 }
@@ -31,4 +31,110 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.Weather {
+  font-family: "Courier New", Courier, monospace;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  padding: 40px;
+  color: #878787;
+}
+
+.Weather form {
+  margin-top: 40px;
+  border-bottom: 1px solid #ccdc24;
+  padding-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.Weather .search-input {
+  background: #ccdc24;
+  border: none;
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  color: rgba(39, 33, 66, 4);
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+}
+
+.form-control {
+  width: 100%;
+  font-weight: 400;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+button,
+input {
+  overflow: visible;
+  margin: 0;
+  font-family: inherit;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.bnt:not(:disabled) :not(.disabled) {
+  cursor: pointer;
+}
+
+.Weather .btn {
+  background: #8db6bf;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 0;
+  border: none;
+  height: 50px;
+}
+
+[type="submit"] {
+  -webkit-appearance: button;
+  appearance: button;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.btn-primary {
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
