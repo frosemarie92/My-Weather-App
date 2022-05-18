@@ -92,3 +92,12 @@ li:first-letter {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.weather-forecast .active:hover {
+  text-decoration: none;
+}
